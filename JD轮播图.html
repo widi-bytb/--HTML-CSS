@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/reset.css">
+</head>
+<style>
+    .img-list {
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+        position: relative;
+    }
+    
+    .img-list li {
+        position: absolute;
+    }
+    
+    .pointer {
+        position: absolute;
+        z-index: 999;
+        /* bottom:0;是相对根元素进行定位,要开启他的包含块元素定位 */
+        bottom: 20px;
+    }
+    
+    .pointer a {
+        width: 10px;
+        height: 10px;
+        background-color: rgba(255, 255, 255, .5);
+        float: left;
+        border-radius: 50%;
+        margin-left: 4px;
+        border: 2px solid transparent;
+    }
+    
+    .pointer a.active,
+    .pointer a:hover {
+        background-color: white;
+        border: 2px solid rgba(255, 0, 0, .6);
+    }
+</style>
+
+<body>
+    <ul class="img-list">
+        <li>
+            <a href="#"><img src="../学习JavaScript/img/8.jpg"></a>
+        </li>
+        <li>
+            <a href="#"><img src="../学习JavaScript/img/6.jpg"></a>
+        </li>
+        <li>
+            <a href="#"><img src="../学习JavaScript/img/9.jpg"></a>
+        </li>
+        <div class="pointer">
+            <a class="active" href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+        </div>
+    </ul>
+</body>
+
+</html>

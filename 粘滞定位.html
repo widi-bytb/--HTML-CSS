@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/reset.css">
+</head>
+<style type="text/css">
+    body {
+        height: 3000px;
+    }
+    
+    .navfirst {
+        width: 1210px;
+        height: 48px;
+        background-color: #e8e7e3;
+        margin: 100px auto;
+        /* 粘滞定位
+        当元素的position属性设置为sticky时则开启了粘滞定位
+        粘滞定位和相对定位的特点基本一致，不同的是粘滞定位可以在元素到达某个位置时将其固定
+        */
+        position: sticky;
+        top: 0;
+    }
+    
+    .navfirst li {
+        /* height: 48px; */
+        float: left;
+        /* 将我们的元素在父元素中垂直居中 */
+        list-style: none;
+        line-height: 48px;
+    }
+    
+    .navfirst li a {
+        /* 将a转换为块元素*/
+        display: block;
+        text-decoration: none;
+        height: 48px;
+        color: #777777;
+        font-size: 18px;
+        padding: 0px 44.9px;
+    }
+    
+    .navfirst li a:hover {
+        color: #900b09;
+        background-color: #3f3f3f;
+    }
+</style>
+
+<body>
+    <div class="navfirst">
+        <ur class="menu">
+            <li><a href="#" title="HTML 系列教程">HTML/CSS</a></li>
+            <li><a href="#" title="浏览器脚本教程">Browser Side</a></li>
+            <li><a href="#" title="服务器脚本教程">Server Side</a></li>
+            <li><a href="#" title="编程教程">Programming</a></li>
+            <li><a href="#" title="XML 系列教程">XML</a></li>
+            <li><a href="#" title="建站手册">Web Building</a></li>
+            <li><a href="#" title="参考手册">Reference</a></li>
+        </ur>
+    </div>
+</body>
+
+</html>

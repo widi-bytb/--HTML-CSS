@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/reset.css">
+</head>
+<style type="text/css">
+    /* 设置容器的样式 */
+    
+    a {
+        /* 去除下划线 */
+        text-decoration: none;
+    }
+    
+    img {
+        width: 100%;
+        height: 200px;
+    }
+    
+    .new-wrapper {
+        width: 300px;
+        height: 360px;
+        margin: 50px auto;
+        /* 设置上边框 */
+        border-top: 1px solid #ddd;
+    }
+    /* 设置new-title */
+    
+    .new-title {
+        height: 30px;
+        /*把h2变成行内块元素，为了边框和字体宽都一样 */
+        display: inline-block;
+        border-top: 1px solid red;
+        /* 通过margin-top将h2上移，盖住上边框 */
+        margin-top: -1px;
+        padding-top: 10px;
+    }
+    
+    .new-title a {
+        color: #40406b;
+        /* 设置文字的加租 */
+        font-weight: bold;
+    }
+    /* 设置图片的文字效果 */
+    
+    .new-img h3 {
+        margin-top: -30px;
+        font-weight: bold;
+        color: black;
+        padding-left: 10px;
+    }
+    
+    .new-list {
+        margin-top: 20px;
+        /* padding-left: 17px; */
+    }
+    
+    .new-list li {
+        margin-bottom: 17px;
+        color: #666;
+    }
+    
+    .new-list li a:hover {
+        color: red;
+    }
+    
+    .new-list li a::before {
+        content: '🚦';
+        font-size: 12px;
+    }
+</style>
+
+<body>
+    <!-- 创建新闻列表的外侧的容器 -->
+    <div class="new-wrapper">
+        <!--创建一个标题标签 -->
+        <h2 class="new-title">
+            <a href="#">体育</a>
+        </h2>
+        <!-- 创建一个图片的容器  -->
+        <div class="new-img">
+            <a href="#">
+                <img src="../学习JavaScript/img/8.jpg" alt="">
+                <!-- 创建一个图片的标题 -->
+                <h3>
+                    城市美好的瞬间
+                </h3>
+            </a>
+
+        </div>
+        <!-- 新闻列表 -->
+        <ul class="new-list">
+            <li>
+                <a href="#">城市摄影</a>
+            </li>
+            <li>
+                <a href="#">城市摄影</a>
+            </li>
+            <li>
+                <a href="#">城市摄影</a>
+            </li>
+            <li>
+                <a href="#">城市摄影</a>
+            </li>
+        </ul>
+
+    </div>
+</body>
+
+</html>
